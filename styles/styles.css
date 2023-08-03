@@ -45,16 +45,33 @@ body {
     color: var(--main-text-color);
     padding: 0 20px;
 
+    @media (max-width: 646px) {
+        height: 200px;
+
+    }
+
+
 }
 
 .LogoNavbar {
     border-radius: 100%;
     max-width: 80px;
     cursor: pointer;
+
+
+
 }
 
 .navbar .ItemsNavbar {
     display: flex;
+
+
+    @media (max-width: 646px) {
+
+        flex-direction: column;
+
+
+    }
 }
 
 .navbar .ItemsNavbar li {
@@ -64,6 +81,20 @@ body {
     cursor: pointer;
     transition: .5s;
     text-decoration: none;
+
+    @media (max-width: 880px) {
+        font-size: 12px;
+        padding: 0 4px;
+
+    }
+
+    @media (max-width: 646px) {
+        font-size: 16px;
+        padding: 2px 0;
+        text-align: center;
+
+
+    }
 }
 
 .navbar .ItemsNavbar a {
@@ -87,6 +118,20 @@ body {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transition: .5s;
     font-size: 12px;
+    font-weight: 500;
+
+    @media (max-width: 880px) {
+        padding: 8px 14px;
+    }
+
+
+    @media (max-width: 646px) {
+        display: none;
+    }
+}
+
+.buttonBecomeAMember a {
+    color: var(--main-text-color);
 }
 
 .buttonBecomeAMember:hover {
@@ -113,6 +158,10 @@ body {
 
 .firstContent .imageTheRenewableFuture {
     max-width: 400px;
+
+    @media (max-width: 500px) {
+        max-width: 260px;
+    }
 }
 
 .firstContent h1 {
@@ -126,8 +175,18 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-
     color: transparent;
+
+
+
+    @media (max-width: 646px) {
+        font-size: 60px;
+    }
+
+
+    @media (max-width: 482px) {
+        font-size: 40px;
+    }
 }
 
 .firstContent h2 {
@@ -135,7 +194,19 @@ body {
     letter-spacing: 1px;
     opacity: 0.9;
     font-weight: 400;
-    padding: 16px 0 40px 0
+    padding: 16px 0 40px 0;
+
+    @media (max-width: 646px) {
+        font-size: 16px;
+    }
+
+
+    @media (max-width: 482px) {
+        font-size: 14px;
+    }
+
+
+
 }
 
 .SecondContent {
@@ -151,6 +222,11 @@ body {
     line-height: 25px;
     font-size: 18px;
     padding-bottom: 40px;
+
+    @media (max-width: 482px) {
+        text-align: center;
+        font-size: 16px;
+    }
 }
 
 .renewableEnergyWrapper {
@@ -166,6 +242,7 @@ body {
 
 
 
+
 }
 
 .listOfRenewableEnergy {
@@ -174,6 +251,15 @@ body {
     gap: 1.5rem;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 1000px) {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 684px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 #renewableEnergy h1 {
@@ -186,6 +272,17 @@ body {
     color: transparent;
     text-align: center;
     padding-bottom: 40px;
+    padding: 0 10px 40px 10px;
+
+    @media (max-width: 646px) {
+        font-size: 40px;
+        padding: 20px 0;
+    }
+
+
+    @media (max-width: 482px) {
+        font-size: 30px;
+    }
 }
 
 .hydroeletricenergyicon {
@@ -199,7 +296,6 @@ body {
 .genericDivForTopicsRenewableEnergy {
     max-width: 300px;
     display: flex;
-
 
 }
 
@@ -236,6 +332,16 @@ body {
     color: transparent;
     text-align: center;
     margin-bottom: 20px;
+
+    @media (max-width: 646px) {
+        font-size: 40px;
+        padding: 20px 0;
+    }
+
+
+    @media (max-width: 482px) {
+        font-size: 30px;
+    }
 }
 
 #whoWeAre h2 {
@@ -245,6 +351,18 @@ body {
 #whoWeAre p {
     max-width: 400px;
     opacity: 0.9;
+
+    @media (max-width: 646px) {
+        font-size: 14px;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+
+    @media (max-width: 482px) {
+        font-size: 12px;
+        text-align: center;
+    }
 }
 
 .aboutMePeople {
@@ -277,6 +395,16 @@ body {
     color: transparent;
     text-align: center;
     margin-bottom: 20px;
+
+    @media (max-width: 646px) {
+        font-size: 40px;
+        padding: 20px 0;
+    }
+
+
+    @media (max-width: 482px) {
+        font-size: 30px;
+    }
 }
 
 #becomeAMember p {
@@ -284,6 +412,18 @@ body {
     text-align: center;
     max-width: 400px;
     padding-bottom: 20px;
+
+    @media (max-width: 646px) {
+        font-size: 14px;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+
+    @media (max-width: 482px) {
+        font-size: 12px;
+        text-align: center;
+    }
 
 }
 
@@ -312,6 +452,12 @@ body {
     justify-content: center;
     padding: 80px 0;
     margin: 0 auto;
+
+    #contactUs .contactUsForm .messageInput {
+
+        height: 180px;
+    }
+
 }
 
 #contactUs h1 {
@@ -325,6 +471,16 @@ body {
     text-align: center;
     margin-bottom: 20px;
 
+    @media (max-width: 646px) {
+        font-size: 40px;
+        padding: 20px 0;
+    }
+
+
+    @media (max-width: 482px) {
+        font-size: 30px;
+    }
+
 }
 
 #contactUs p {
@@ -332,6 +488,18 @@ body {
     max-width: 400px;
     text-align: center;
     margin-bottom: 20px;
+
+    @media (max-width: 646px) {
+        font-size: 14px;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+
+    @media (max-width: 482px) {
+        font-size: 12px;
+        text-align: center;
+    }
 }
 
 #contactUs .contactUsForm {
@@ -348,11 +516,12 @@ body {
     padding-left: 10px
 }
 
-
-#contactUs .contactUsForm .messageInput {
-
-    height: 180px;
+#contactUs .contactUsForm textarea {
+    border-radius: 10px;
+    border: none;
+    outline: none;
 }
+
 
 .footerWrapper {
     background-color: var(--submain-bg-color);
@@ -365,10 +534,45 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+
+
+    @media (max-width: 646px) {
+
+        flex-direction: column;
+        height: 200px;
+
+    }
+
+
+
+    @media (max-width: 880px) {
+        font-size: 12px;
+        padding: 0 4px;
+
+
+    }
+
+    @media (max-width: 500px) {
+
+        height: 300px;
+        text-align: center;
+
+
+    }
+
+
+
 }
 
 .footer ul {
     display: flex;
+
+    @media (max-width: 500px) {
+
+        flex-direction: column;
+
+
+    }
 }
 
 .footer li {
@@ -377,6 +581,27 @@ body {
     cursor: pointer;
     transition: .5s;
 
+    @media (max-width: 500px) {
+        font-size: 20px;
+        flex-direction: column;
+        font-size: 16px;
+        padding: 2px 0;
+
+    }
+
+
+
+}
+
+
+.LogoFooter {
+    border-radius: 100%;
+    max-width: 80px;
+    cursor: pointer;
+
+    @media (max-width: 646px) {
+        padding: 6px 0;
+    }
 }
 
 .footer a {
