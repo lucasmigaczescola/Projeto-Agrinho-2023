@@ -278,9 +278,38 @@ body {
     width: 1200px;
     height: 200px;
 
-    opacity: 0.8;
+    opacity: 0.9;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.footerWrapper {
+    background-color: var(--submain-bg-color);
+}
+
+.footer {
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer li {
+    padding: 0 10px;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.footer li:hover {
+    opacity: 0.6;
 }
