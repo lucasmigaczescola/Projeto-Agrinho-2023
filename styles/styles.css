@@ -8,12 +8,17 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+
 :root {
     --main-bg-color: #E5E2DA;
     --submain-bg-color: #f7f6f0;
     --main-button-color: #00a651;
-    --main-button-color-hover: #00a651;
-
+    --main-button-color-hover: #136239;
     --border-bottom-navbar: #7b7a7a3a;
     --main-text-color: #070606;
     --box-become-a-member-color: #027b3c;
@@ -58,6 +63,12 @@ body {
     font-family: 100px;
     cursor: pointer;
     transition: .5s;
+    text-decoration: none;
+}
+
+.navbar .ItemsNavbar a {
+    text-decoration: none;
+    color: var(--main-text-color)
 }
 
 .navbar .ItemsNavbar li:hover {
@@ -86,7 +97,7 @@ body {
     background-color: var(--main-bg-color);
 }
 
-.theRenewableFutureSection {
+#theRenewableFutureSection {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
@@ -130,8 +141,9 @@ body {
 .SecondContent {
     display: flex;
     justify-content: space-around;
-    padding-top: 50px;
+
     gap: 50px;
+    padding: 50px 20px 0 20px;
 }
 
 .SecondContent p {
@@ -145,7 +157,7 @@ body {
     background-color: var(--submain-bg-color)
 }
 
-.renewableEnergy {
+#renewableEnergy {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
@@ -164,7 +176,7 @@ body {
     align-items: center;
 }
 
-.renewableEnergy h1 {
+#renewableEnergy h1 {
     font-size: 40px;
     background: rgb(76, 175, 80);
     background: linear-gradient(90deg, rgba(76, 175, 80, 1) 8%, rgba(255, 152, 0, 1) 51%);
@@ -204,7 +216,7 @@ body {
     background-color: var(--main-bg-color);
 }
 
-.whoWeAre {
+#whoWeAre {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
@@ -214,7 +226,7 @@ body {
     padding: 40px 0;
 }
 
-.whoWeAre h1 {
+#whoWeAre h1 {
     font-size: 40px;
     background: rgb(76, 175, 80);
     background: linear-gradient(90deg, rgba(76, 175, 80, 1) 8%, rgba(255, 152, 0, 1) 51%);
@@ -226,25 +238,26 @@ body {
     margin-bottom: 20px;
 }
 
-.whoWeAre h2 {
+#whoWeAre h2 {
     padding: 10px 0;
 }
 
-.whoWeAre p {
+#whoWeAre p {
     max-width: 400px;
     opacity: 0.9;
 }
 
 .aboutMePeople {
-    border-radius: 500%;
+    border-radius: 100%;
+    object-fit: cover;
 }
 
 .becomeAMemberWrapper {
     background-color: var(--submain-bg-color);
-    border-bottom: .1px solid var(--border-bottom-navbar)
+
 }
 
-.becomeAMember {
+#becomeAMember {
     max-width: 1400px;
     display: flex;
     justify-content: center;
@@ -254,7 +267,7 @@ body {
 
 }
 
-.becomeAMember h1 {
+#becomeAMember h1 {
     font-size: 40px;
     background: rgb(76, 175, 80);
     background: linear-gradient(90deg, rgba(76, 175, 80, 1) 8%, rgba(255, 152, 0, 1) 51%);
@@ -266,7 +279,7 @@ body {
     margin-bottom: 20px;
 }
 
-.becomeAMember p {
+#becomeAMember p {
     opacity: 0.9;
     text-align: center;
     max-width: 400px;
@@ -283,6 +296,62 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+.contactUsWrapper {
+    background-color: var(--main-bg-color);
+    border-bottom: .1px solid var(--border-bottom-navbar)
+}
+
+#contactUs {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    margin: 0 auto;
+}
+
+#contactUs h1 {
+    font-size: 40px;
+    background: rgb(76, 175, 80);
+    background: linear-gradient(90deg, rgba(76, 175, 80, 1) 8%, rgba(255, 152, 0, 1) 51%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+#contactUs p {
+    opacity: 0.9;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contactUs .contactUsForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactUs .contactUsForm input {
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 300px;
+    height: 30px;
+    padding-left: 10px
+}
+
+
+#contactUs .contactUsForm .messageInput {
+
+    height: 180px;
 }
 
 .footerWrapper {
@@ -304,12 +373,21 @@ body {
 
 .footer li {
     padding: 0 10px;
-    opacity: 0.9;
+
     cursor: pointer;
     transition: .5s;
 
 }
 
+.footer a {
+    color: var(--main-text-color);
+}
+
 .footer li:hover {
     opacity: 0.6;
+}
+
+.socialMediaIcons {
+    align-items: center;
+    display: flex;
 }
