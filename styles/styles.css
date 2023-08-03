@@ -10,10 +10,13 @@
 
 :root {
     --main-bg-color: #E5E2DA;
+    --submain-bg-color: #f7f6f0;
     --main-button-color: #00a651;
-    --main-button-color-hover: #027a3c;
+    --main-button-color-hover: #00a651;
+
     --border-bottom-navbar: #7b7a7a3a;
     --main-text-color: #070606;
+    --box-become-a-member-color: #027b3c;
 }
 
 body {
@@ -39,7 +42,7 @@ body {
 
 }
 
-.navbar .LogoNavbar {
+.LogoNavbar {
     border-radius: 100%;
     max-width: 80px;
     cursor: pointer;
@@ -61,7 +64,7 @@ body {
     opacity: 0.6;
 }
 
-.navbar .buttonBecomeAMember {
+.buttonBecomeAMember {
     background-color: var(--main-button-color);
     border-radius: 40px;
     text-transform: uppercase;
@@ -75,7 +78,7 @@ body {
     font-size: 12px;
 }
 
-.navbar .buttonBecomeAMember:hover {
+.buttonBecomeAMember:hover {
     background-color: var(--main-button-color-hover);
 }
 
@@ -139,7 +142,7 @@ body {
 }
 
 .renewableEnergyWrapper {
-    background-color: #f7f6f0;
+    background-color: var(--submain-bg-color)
 }
 
 .renewableEnergy {
@@ -147,7 +150,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding: 80px 0;
+    padding: 50px 0;
 
 
 
@@ -195,4 +198,89 @@ body {
 
 .genericDivForTopicsRenewableEnergy p {
     opacity: 0.9;
+}
+
+.whoWeAreWrapper {
+    background-color: var(--main-bg-color);
+}
+
+.whoWeAre {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.whoWeAre h1 {
+    font-size: 40px;
+    background: rgb(76, 175, 80);
+    background: linear-gradient(90deg, rgba(76, 175, 80, 1) 8%, rgba(255, 152, 0, 1) 51%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.whoWeAre h2 {
+    padding: 10px 0;
+}
+
+.whoWeAre p {
+    max-width: 400px;
+    opacity: 0.9;
+}
+
+.aboutMePeople {
+    border-radius: 500%;
+}
+
+.becomeAMemberWrapper {
+    background-color: var(--submain-bg-color);
+    border-bottom: .1px solid var(--border-bottom-navbar)
+}
+
+.becomeAMember {
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    margin: 0 auto;
+
+}
+
+.becomeAMember h1 {
+    font-size: 40px;
+    background: rgb(76, 175, 80);
+    background: linear-gradient(90deg, rgba(76, 175, 80, 1) 8%, rgba(255, 152, 0, 1) 51%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.becomeAMember p {
+    opacity: 0.9;
+    text-align: center;
+    max-width: 400px;
+    padding-bottom: 20px;
+
+}
+
+.becomeAMemberBox {
+    width: 1200px;
+    height: 200px;
+
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
