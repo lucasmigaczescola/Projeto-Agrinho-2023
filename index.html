@@ -19,9 +19,14 @@
 					<li><a href="#becomeAMember">Seja um Membro</a></li>
 					<li><a href="#contactUs">Contato</a></li>
 				</ul>
-				<button class="buttonBecomeAMember">
-					<a href="#contactUs">Seja um membro</a>
-				</button>
+				<div>
+					<button class="buttonBecomeAMember">
+						<a href="/register.html">Seja um membro</a>
+					</button>
+					<button class="buttonBecomeAMember">
+						<a href="/login.html">Faça login</a>
+					</button>
+				</div>
 			</nav>
 		</nav>
 		<section class="theRenewableFutureSectionWrapper">
@@ -193,7 +198,10 @@
 						futuro sustentável, apoiando projetos inovadores de energia limpa e
 						combatendo as mudanças climáticas.
 					</p>
-					<button class="buttonBecomeAMember">Seja um Membro</button>
+
+					<button class="buttonBecomeAMember">
+						<a href="/register.html">Seja um Membro</a>
+					</button>
 				</div>
 			</section>
 		</section>
@@ -204,7 +212,7 @@
 					Junte-se a nós na causa da energia renovável e faça parte da
 					transformação para um futuro mais sustentável.
 				</p>
-				<form class="contactUsForm">
+				<form class="defaultForm" id="registerForm">
 					<label>Nome</label>
 					<input type="text" class="nameInput" />
 					<label>E-Mail</label>
@@ -212,6 +220,7 @@
 					<label>Mensagem</label>
 
 					<textarea col="7" row="12"></textarea>
+					<button class="buttonBecomeAMember">Enviar Mensagem</button>
 				</form>
 			</section>
 		</section>
