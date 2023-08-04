@@ -64,7 +64,7 @@ body {
 
 .navbar .ItemsNavbar {
     display: flex;
-
+    margin-left: 100px;
 
     @media (max-width: 646px) {
 
@@ -81,6 +81,7 @@ body {
     cursor: pointer;
     transition: .5s;
     text-decoration: none;
+
 
     @media (max-width: 880px) {
         font-size: 12px;
@@ -264,14 +265,7 @@ body {
     align-items: center;
     margin: 0 auto;
 
-    @media (max-width: 1000px) {
-        grid-template-columns: 1fr 1fr;
-        margin: 0 auto;
-    }
 
-    @media (max-width: 684px) {
-        grid-template-columns: 1fr;
-    }
 }
 
 #renewableEnergy h1 {
@@ -306,10 +300,28 @@ body {
 .genericDivForTopicsRenewableEnergy {
 
     display: flex;
-
     align-items: center;
 
+
+
+
+
 }
+
+.genericDivForTopicsRenewableEnergy p {
+    @media (max-width: 1200px) {
+        font-size: 14px !important;
+
+    }
+}
+
+.genericDivForTopicsRenewableEnergy h3 {
+    @media (max-width: 1200px) {
+        font-size: 24px !important;
+
+    }
+}
+
 
 .genericDivForTopicsRenewableEnergy h3 {
     padding-bottom: 2px;
@@ -394,44 +406,89 @@ body {
     flex-direction: row;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        text-align: center;
+
+    }
 }
 
 
 #sunEnergy p, #sunEnergy h3 {
     padding-left: 40px;
+
+    @media (max-width: 1200px) {
+        padding-left: 0px;
+    }
 }
 
 
 #windEnergy {
     flex-direction: row-reverse;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 
 
 #hydroEletricEnergy {
     flex-direction: row;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 #hydroEletricEnergy p, #hydroEletricEnergy h3 {
     padding-left: 40px;
+
+    @media (max-width: 1200px) {
+        padding-left: 0px;
+    }
+
 }
 
 #geoThermalEnergy {
     flex-direction: row-reverse;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 
 
 #waveAndTidalEnergy {
     flex-direction: row;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 #waveAndTidalEnergy p, #waveAndTidalEnergy h3 {
     padding-left: 40px;
+
+    @media (max-width: 1200px) {
+        padding-left: 0px;
+    }
+
 }
 
 #sustainableEnergyForTransportEnergy {
     flex-direction: row-reverse;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 
@@ -613,7 +670,6 @@ body {
 
 }
 
-#submitContact {}
 
 #contactUs p {
     opacity: 0.9;
@@ -656,6 +712,37 @@ body {
     outline: none;
     margin-bottom: 20px;
     padding: 8px;
+}
+
+#submitContact {
+    background-color: var(--main-button-color);
+    border-radius: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: .5s;
+    font-size: 10px;
+    font-weight: 500;
+
+    @media (max-width: 940px) {
+        padding: 8px 14px;
+
+    }
+
+    @media (max-width: 900px) {
+        padding: 6px 8px;
+        font-size: 10px;
+    }
+
+
+
+}
+
+#submitContact:hover {
+    background-color: var(--main-button-color-hover);
 }
 
 
@@ -751,82 +838,6 @@ body {
 .socialMediaIcons {
     align-items: center;
     display: flex;
-}
-
-.registerFormWrapper {
-    background-color: var(--main-bg-color);
-}
-
-.registerForm {
-    max-width: 1400px;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding-top: 40px;
-}
-
-.registerForm h1 {
-    font-size: 40px;
-    background: rgb(76, 175, 80);
-    background: linear-gradient(90deg, rgba(76, 175, 80, 1) 8%, rgba(255, 152, 0, 1) 51%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    color: transparent;
-    text-align: center;
-    padding-bottom: 40px;
-    padding: 6px 10px 8px 10px;
-
-    @media (max-width: 646px) {
-        font-size: 40px;
-        padding: 20px 0;
-    }
-
-
-    @media (max-width: 482px) {
-        font-size: 30px;
-    }
-}
-
-.registerForm p {
-    max-width: 400px;
-    text-align: center;
-    opacity: 0.8;
-    font-size: 12px;
-    padding-bottom: 18px;
-}
-
-#registerForm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 500px;
-    width: 100%;
-}
-
-#registerForm select {
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    width: 300px;
-    padding: 4px 8px;
-}
-
-#buttonRegister {
-    margin-top: 20px;
-
-}
-
-#registerForm label {
-    margin-bottom: 6px;
-    opacity: 0.9;
-}
-
-#registerForm input {
-    margin-bottom: 18px;
 }
 
 
