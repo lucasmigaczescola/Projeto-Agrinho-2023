@@ -111,18 +111,18 @@ body {
     border-radius: 40px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 12px 20px;
+    padding: 12px 16px;
     color: white;
     border: none;
     cursor: pointer;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transition: .5s;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
 
     @media (max-width: 940px) {
         padding: 8px 14px;
-        font-size: 10px;
+
     }
 
     @media (max-width: 900px) {
@@ -241,6 +241,7 @@ body {
     }
 }
 
+
 .renewableEnergyWrapper {
     background-color: var(--submain-bg-color)
 }
@@ -253,17 +254,15 @@ body {
     flex-direction: column;
     padding: 50px 0;
 
-
-
-
 }
 
 .listOfRenewableEnergy {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 
     @media (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
@@ -276,7 +275,7 @@ body {
 }
 
 #renewableEnergy h1 {
-    font-size: 40px;
+    font-size: 60px;
     background: rgb(76, 175, 80);
     background: linear-gradient(90deg, rgba(76, 175, 80, 1) 8%, rgba(255, 152, 0, 1) 51%);
     background-clip: text;
@@ -298,28 +297,145 @@ body {
     }
 }
 
-.hydroeletricenergyicon {
-    margin-right: 4px;
-}
 
-.sustainableenergyfortransporticon {
-    margin-top: 14px;
-}
+
+
+
+
 
 .genericDivForTopicsRenewableEnergy {
-    max-width: 300px;
+
     display: flex;
+
+    align-items: center;
 
 }
 
 .genericDivForTopicsRenewableEnergy h3 {
     padding-bottom: 2px;
+    font-size: 34px;
 }
+
+.genericDivForTopicsRenewableEnergy p {
+
+    font-size: 24px;
+
+}
+
+.renewableEnergyTexts {
+    max-width: 800px;
+
+}
+
 
 
 .genericDivForTopicsRenewableEnergy p {
     opacity: 0.9;
+
 }
+
+.sunenergyicon {
+    transition: .4s;
+    cursor: pointer;
+}
+
+.sunenergyicon:hover {
+    transform: scale(1.1);
+}
+
+.windenergyicon {
+    transition: .4s;
+    cursor: pointer;
+}
+
+.windenergyicon:hover {
+    transform: scale(1.1);
+}
+
+.hydroeletricenergyicon {
+    transition: .4s;
+    cursor: pointer;
+}
+
+.hydroeletricenergyicon:hover {
+    transform: scale(1.1);
+}
+
+
+
+.geothermalicon {
+    transition: .4s;
+    cursor: pointer;
+}
+
+.geothermalicon:hover {
+    transform: scale(1.1);
+}
+
+.waveandtidalenergyicon {
+    transition: .4s;
+    cursor: pointer;
+}
+
+.waveandtidalenergyicon:hover {
+    transform: scale(1.1);
+}
+
+.sustainableenergyfortransporticon {
+    transition: .4s;
+    cursor: pointer;
+}
+
+.sustainableenergyfortransporticon:hover {
+    transform: scale(1.1);
+}
+
+#sunEnergy {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#sunEnergy p, #sunEnergy h3 {
+    padding-left: 40px;
+}
+
+
+#windEnergy {
+    flex-direction: row-reverse;
+}
+
+
+
+#hydroEletricEnergy {
+    flex-direction: row;
+}
+
+#hydroEletricEnergy p, #hydroEletricEnergy h3 {
+    padding-left: 40px;
+}
+
+#geoThermalEnergy {
+    flex-direction: row-reverse;
+}
+
+
+
+#waveAndTidalEnergy {
+    flex-direction: row;
+}
+
+#waveAndTidalEnergy p, #waveAndTidalEnergy h3 {
+    padding-left: 40px;
+}
+
+#sustainableEnergyForTransportEnergy {
+    flex-direction: row-reverse;
+}
+
+
+
 
 .whoWeAreWrapper {
     background-color: var(--main-bg-color);
@@ -473,10 +589,6 @@ body {
 
 }
 
-.defaultForm .messageInput {
-
-    height: 180px;
-}
 
 #contactUs h1 {
     font-size: 40px;
@@ -500,6 +612,8 @@ body {
     }
 
 }
+
+#submitContact {}
 
 #contactUs p {
     opacity: 0.9;
@@ -541,6 +655,7 @@ body {
     border: none;
     outline: none;
     margin-bottom: 20px;
+    padding: 8px;
 }
 
 
