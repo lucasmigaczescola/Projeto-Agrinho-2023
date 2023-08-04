@@ -43,11 +43,10 @@ body {
     height: 100px;
     align-items: center;
     color: var(--main-text-color);
-    padding: 0 20px;
+    padding: 0 40px;
 
-    @media (max-width: 646px) {
+    @media (max-width: 780px) {
         height: 200px;
-
     }
 
 
@@ -66,36 +65,36 @@ body {
     display: flex;
     margin-left: 100px;
 
-    @media (max-width: 646px) {
-
+    @media (max-width: 780px) {
+        display: flex;
         flex-direction: column;
-
-
+        margin-left: 0;
     }
 }
 
 .navbar .ItemsNavbar li {
-    padding: 0 14px;
+    padding: 0 12px;
     font-weight: 600;
     font-family: 100px;
     cursor: pointer;
     transition: .5s;
     text-decoration: none;
+    display: flex;
 
+
+    @media (max-width: 1200px) {
+        font-size: 12px;
+    }
 
     @media (max-width: 880px) {
         font-size: 12px;
-        padding: 0 4px;
+        padding: 4px 4px;
 
     }
 
-    @media (max-width: 646px) {
-        font-size: 16px;
-        padding: 2px 0;
-        text-align: center;
 
 
-    }
+
 }
 
 .navbar .ItemsNavbar a {
@@ -132,9 +131,7 @@ body {
     }
 
 
-    @media (max-width: 680px) {
-        display: none;
-    }
+
 }
 
 .buttonBecomeAMember a {
