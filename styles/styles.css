@@ -63,12 +63,12 @@ body {
 
 .navbar .ItemsNavbar {
     display: flex;
-    margin-left: 100px;
+    align-items: center;
 
     @media (max-width: 780px) {
         display: flex;
         flex-direction: column;
-        margin-left: 0;
+
     }
 }
 
@@ -131,6 +131,15 @@ body {
     }
 
 
+
+}
+
+#loginButton {
+    margin-left: 8px;
+
+    @media (max-width: 780px) {
+        margin-top: 8px;
+    }
 
 }
 
