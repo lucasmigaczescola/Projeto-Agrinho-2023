@@ -73,14 +73,21 @@ body {
 }
 
 .navbar .ItemsNavbar li {
+
+    text-decoration: none;
+
+}
+
+.navbar .ItemsNavbar a {
+    text-decoration: none;
+    color: var(--main-text-color);
+
     padding: 0 12px;
     font-weight: 600;
     font-family: 100px;
     cursor: pointer;
     transition: .5s;
-    text-decoration: none;
     display: flex;
-
 
     @media (max-width: 1200px) {
         font-size: 12px;
@@ -92,62 +99,49 @@ body {
 
     }
 
-
-
-
-}
-
-.navbar .ItemsNavbar a {
-    text-decoration: none;
-    color: var(--main-text-color)
 }
 
 .navbar .ItemsNavbar li:hover {
     opacity: 0.6;
 }
 
-.buttonBecomeAMember {
+.buttonReset {
+    border: none;
+    background: transparent;
+}
+
+.genericButton {
+    display: inline-block !important;
+    cursor: pointer !important;
     background-color: var(--main-button-color);
     border-radius: 40px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 12px 16px;
-    color: white;
-    border: none;
-    cursor: pointer;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 12px 16px !important;
+    color: white !important;
     transition: .5s;
     font-size: 10px;
     font-weight: 500;
+    margin-left: 8px !important;
 
     @media (max-width: 940px) {
-        padding: 8px 14px;
+        padding: 8px 14px !important;
 
     }
 
     @media (max-width: 900px) {
-        padding: 6px 8px;
-        font-size: 10px;
+        padding: 6px 8px !important;
+        font-size: 10px !important;
     }
-
-
-
-}
-
-#loginButton {
-    margin-left: 8px;
 
     @media (max-width: 780px) {
-        margin-top: 8px;
+        margin-top: 8px !important;
     }
-
 }
 
-.buttonBecomeAMember a {
-    color: var(--submain-bg-color);
-}
 
-.buttonBecomeAMember:hover {
+
+.genericButton:hover {
     background-color: var(--main-button-color-hover);
 }
 

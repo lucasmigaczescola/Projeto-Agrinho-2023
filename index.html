@@ -9,7 +9,7 @@
 		<link href="https://fonts.cdnfonts.com/css/switzer" rel="stylesheet" />
 	</head>
 	<body>
-		<section class="navbarWrapper">
+		<div class="navbarWrapper">
 			<nav class="navbar">
 				<img src="/img/favicon.png" class="LogoNavbar" alt="Logo RenewEarth" />
 				<ul class="ItemsNavbar">
@@ -18,279 +18,307 @@
 					<li><a href="#whoWeAre">Sobre</a></li>
 					<li><a href="#becomeAMember">Seja um Membro</a></li>
 					<li><a href="#contactUs">Contato</a></li>
-					<button class="buttonBecomeAMember">
-						<a href="/register.html">Seja um Membro</a>
-					</button>
-					<button class="buttonBecomeAMember" id="loginButton">
-						<a href="/login.html">Faça Login</a>
-					</button>
+					<li>
+						<button class="buttonReset">
+							<a href="/register.html" class="genericButton">Seja um Membro</a>
+						</button>
+					</li>
+					<li>
+						<button class="buttonReset">
+							<a href="/login.html" class="genericButton">Faça Login</a>
+						</button>
+					</li>
 				</ul>
 			</nav>
-		</section>
-		<section class="theRenewableFutureSectionWrapper">
-			<section id="theRenewableFutureSection">
-				<div class="firstContent">
-					<h1>Por um Futuro Renovável</h1>
-					<h2>Uma Jornada Rumo à Sustentabilidade</h2>
-					<img
-						src="/img/fontesdeenergia.png"
-						class="imageTheRenewableFuture"
-						alt="Imagem representando a energia renovável"
-					/>
-				</div>
-				<div class="SecondContent">
-					<p>
-						Nos dias atuais, a humanidade confronta desafios prementes ligados
-						às mudanças climáticas e à escassez de recursos não renováveis.
-						Nesse cenário, a transição para um futuro sustentável se torna
-						crucial, com enfoque nas energias renováveis, surgindo como
-						alternativa viável e promissora para combater esses problemas.
-					</p>
-					<p>
-						As energias renováveis, como a solar, eólica, hidrelétrica, biomassa
-						e geotérmica, apresentam inúmeras vantagens em comparação com os
-						combustíveis fósseis. Elas são fontes limpas e inesgotáveis de
-						energia, contribuindo significativamente para a redução das emissões
-						de gases de efeito estufa e, consequentemente, para a mitigação do
-						aquecimento global.
-					</p>
+		</div>
+		<main>
+			<section class="theRenewableFutureSectionWrapper">
+				<div id="theRenewableFutureSection">
+					<div class="firstContent">
+						<h1>Por um Futuro Renovável</h1>
+						<h2>Uma Jornada Rumo à Sustentabilidade</h2>
+						<img
+							src="/img/fontesdeenergia.png"
+							class="imageTheRenewableFuture"
+							alt="Imagem representando a energia renovável"
+						/>
+					</div>
+					<div class="SecondContent">
+						<p>
+							Nos dias atuais, a humanidade confronta desafios prementes ligados
+							às mudanças climáticas e à escassez de recursos não renováveis.
+							Nesse cenário, a transição para um futuro sustentável se torna
+							crucial, com enfoque nas energias renováveis, surgindo como
+							alternativa viável e promissora para combater esses problemas.
+						</p>
+						<p>
+							As energias renováveis, como a solar, eólica, hidrelétrica,
+							biomassa e geotérmica, apresentam inúmeras vantagens em comparação
+							com os combustíveis fósseis. Elas são fontes limpas e inesgotáveis
+							de energia, contribuindo significativamente para a redução das
+							emissões de gases de efeito estufa e, consequentemente, para a
+							mitigação do aquecimento global.
+						</p>
+					</div>
 				</div>
 			</section>
-		</section>
-		<section class="renewableEnergyWrapper">
-			<section id="renewableEnergy">
-				<h1>Energias Renováveis</h1>
-				<div class="listOfRenewableEnergy">
-					<div class="genericDivForTopicsRenewableEnergy" id="sunEnergy">
-						<a
-							href="https://www.youtube.com/watch?v=JTqz_xzozl0"
-							target="_blank
+			<section class="renewableEnergyWrapper">
+				<div id="renewableEnergy">
+					<h1>Energias Renováveis</h1>
+					<div class="listOfRenewableEnergy">
+						<div class="genericDivForTopicsRenewableEnergy" id="sunEnergy">
+							<a
+								href="https://www.youtube.com/watch?v=JTqz_xzozl0"
+								target="_blank
                         "
-						>
-							<img
-								src="/img/solarenergyicon.png"
-								alt="Ícone de Energia Solar"
-								class="sunenergyicon"
-								width="320"
-								height="320"
-							/>
-						</a>
-						<div class="renewableEnergyTexts">
-							<h3>Energia Solar</h3>
-							<p>
-								A energia solar é obtida por painéis fotovoltaicos que convertem
-								luz solar em eletricidade. É uma fonte limpa e abundante,
-								reduzindo emissões de gases e promovendo sustentabilidade.
-							</p>
+							>
+								<img
+									src="/img/solarenergyicon.png"
+									alt="Ícone de Energia Solar"
+									class="sunenergyicon"
+									width="320"
+									height="320"
+								/>
+							</a>
+							<div class="renewableEnergyTexts">
+								<h3>Energia Solar</h3>
+								<p>
+									A energia solar é obtida por painéis fotovoltaicos que
+									convertem luz solar em eletricidade. É uma fonte limpa e
+									abundante, reduzindo emissões de gases e promovendo
+									sustentabilidade.
+								</p>
+							</div>
 						</div>
-					</div>
 
-					<div class="genericDivForTopicsRenewableEnergy" id="windEnergy">
-						<a
-							href="https://www.youtube.com/watch?v=ekfFM-uWh5k"
-							target="_blank
+						<div class="genericDivForTopicsRenewableEnergy" id="windEnergy">
+							<a
+								href="https://www.youtube.com/watch?v=ekfFM-uWh5k"
+								target="_blank
                         "
-						>
-							<img
-								src="/img/windenergy.png"
-								alt="Ícone de Energia Eólica"
-								class="windenergyicon"
-								width="320"
-								height="320"
-							/>
-						</a>
-						<div class="renewableEnergyTexts">
-							<h3>Energia Eólica</h3>
-							<p>
-								Gerada pela força dos ventos, turbinas eólicas convertem
-								movimento em eletricidade. Alternativa eficaz aos fósseis,
-								diversifica a matriz energética e preserva o meio ambiente.
-							</p>
+							>
+								<img
+									src="/img/windenergy.png"
+									alt="Ícone de Energia Eólica"
+									class="windenergyicon"
+									width="320"
+									height="320"
+								/>
+							</a>
+							<div class="renewableEnergyTexts">
+								<h3>Energia Eólica</h3>
+								<p>
+									Gerada pela força dos ventos, turbinas eólicas convertem
+									movimento em eletricidade. Alternativa eficaz aos fósseis,
+									diversifica a matriz energética e preserva o meio ambiente.
+								</p>
+							</div>
 						</div>
-					</div>
 
-					<div
-						class="genericDivForTopicsRenewableEnergy"
-						id="hydroEletricEnergy"
-					>
-						<a
-							href="https://www.youtube.com/watch?v=iYPMZamqSH4&t=1s"
-							target="_blank
+						<div
+							class="genericDivForTopicsRenewableEnergy"
+							id="hydroEletricEnergy"
+						>
+							<a
+								href="https://www.youtube.com/watch?v=iYPMZamqSH4&t=1s"
+								target="_blank
                         "
-						>
-							<img
-								src="/img/hydroeletricenergy.png"
-								alt="Ícone de Energia Hidrelétrica"
-								class="hydroeletricenergyicon"
-								width="320"
-								height="320"
-							/>
-						</a>
-						<div class="renewableEnergyTexts">
-							<h3>Energia Hidrelétrica</h3>
-							<p>
-								Produzida pelo fluxo de água em rios, direcionado para turbinas
-								que geram eletricidade. Fonte confiável com baixas emissões,
-								requer planejamento ambiental.
-							</p>
+							>
+								<img
+									src="/img/hydroeletricenergy.png"
+									alt="Ícone de Energia Hidrelétrica"
+									class="hydroeletricenergyicon"
+									width="320"
+									height="320"
+								/>
+							</a>
+							<div class="renewableEnergyTexts">
+								<h3>Energia Hidrelétrica</h3>
+								<p>
+									Produzida pelo fluxo de água em rios, direcionado para
+									turbinas que geram eletricidade. Fonte confiável com baixas
+									emissões, requer planejamento ambiental.
+								</p>
+							</div>
 						</div>
-					</div>
 
-					<div class="genericDivForTopicsRenewableEnergy" id="geoThermalEnergy">
-						<a
-							href="https://www.youtube.com/watch?v=odTByhxsL60"
-							target="_blank
+						<div
+							class="genericDivForTopicsRenewableEnergy"
+							id="geoThermalEnergy"
+						>
+							<a
+								href="https://www.youtube.com/watch?v=odTByhxsL60"
+								target="_blank
                     "
-						>
-							<img
-								src="/img/geothermalenergy.png"
-								alt="Ícone de Energia geotérmica"
-								class="geothermalicon"
-								width="320"
-								height="320"
-							/>
-						</a>
-						<div class="renewableEnergyTexts">
-							<h3>Energia Geotérmica</h3>
-							<p>
-								Aproveita o calor da Terra para eletricidade ou calor direto,
-								através de águas aquecidas. Limpa e constante, usada em pequena
-								e larga escala.
-							</p>
+							>
+								<img
+									src="/img/geothermalenergy.png"
+									alt="Ícone de Energia geotérmica"
+									class="geothermalicon"
+									width="320"
+									height="320"
+								/>
+							</a>
+							<div class="renewableEnergyTexts">
+								<h3>Energia Geotérmica</h3>
+								<p>
+									Aproveita o calor da Terra para eletricidade ou calor direto,
+									através de águas aquecidas. Limpa e constante, usada em
+									pequena e larga escala.
+								</p>
+							</div>
 						</div>
-					</div>
 
-					<div
-						class="genericDivForTopicsRenewableEnergy"
-						id="waveAndTidalEnergy"
-					>
-						<a
-							href="https://www.youtube.com/watch?v=AWcGPwCMl94"
-							target="_blank
+						<div
+							class="genericDivForTopicsRenewableEnergy"
+							id="waveAndTidalEnergy"
+						>
+							<a
+								href="https://www.youtube.com/watch?v=AWcGPwCMl94"
+								target="_blank
             "
-						>
-							<img
-								src="/img/waveandtidalenergy.png"
-								alt="Ícone da Energia das ondas e marés"
-								class="waveandtidalenergyicon"
-								width="320"
-								height="320"
-							/>
-						</a>
-						<div class="renewableEnergyTexts">
-							<h3>Energia das Ondas e Marés</h3>
-							<p>
-								Extraída dos movimentos oceânicos, dispositivos captam energia
-								cinética para eletricidade. Em desenvolvimento, tem potencial
-								para a matriz energética.
-							</p>
+							>
+								<img
+									src="/img/waveandtidalenergy.png"
+									alt="Ícone da Energia das ondas e marés"
+									class="waveandtidalenergyicon"
+									width="320"
+									height="320"
+								/>
+							</a>
+							<div class="renewableEnergyTexts">
+								<h3>Energia das Ondas e Marés</h3>
+								<p>
+									Extraída dos movimentos oceânicos, dispositivos captam energia
+									cinética para eletricidade. Em desenvolvimento, tem potencial
+									para a matriz energética.
+								</p>
+							</div>
 						</div>
-					</div>
 
-					<div
-						class="genericDivForTopicsRenewableEnergy"
-						id="sustainableEnergyForTransportEnergy"
-					>
-						<a
-							href="https://www.youtube.com/watch?v=q650Nb7_HR8"
-							target="_blank
+						<div
+							class="genericDivForTopicsRenewableEnergy"
+							id="sustainableEnergyForTransportEnergy"
+						>
+							<a
+								href="https://www.youtube.com/watch?v=q650Nb7_HR8"
+								target="_blank
     "
-						>
-							<img
-								src="/img/sustainableenergyfortransport.png"
-								alt="Energia Sustentável para o transporte"
-								class="sustainableenergyfortransporticon"
-								width="320"
-								height="320"
-							/>
-						</a>
-						<div class="renewableEnergyTexts">
-							<h3>Energia Sustentável para Transporte</h3>
-							<p>
-								Busca combustíveis verdes, hidrogênio e eletrificação.
-								Eletrificação de veículos, transporte público eficiente e modos
-								sustentáveis reduzem impactos ambientais.
-							</p>
+							>
+								<img
+									src="/img/sustainableenergyfortransport.png"
+									alt="Energia Sustentável para o transporte"
+									class="sustainableenergyfortransporticon"
+									width="320"
+									height="320"
+								/>
+							</a>
+							<div class="renewableEnergyTexts">
+								<h3>Energia Sustentável para Transporte</h3>
+								<p>
+									Busca combustíveis verdes, hidrogênio e eletrificação.
+									Eletrificação de veículos, transporte público eficiente e
+									modos sustentáveis reduzem impactos ambientais.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-		</section>
-		<section class="whoWeAreWrapper">
-			<section id="whoWeAre">
-				<h1>Quem nós somos?</h1>
-				<img
-					src="/img/aboutme.jpg"
-					width="200"
-					height="200"
-					class="aboutMePeople"
-					alt="Foto de um homem"
-				/>
-				<h2>Lucas Migacz</h2>
-				<p>
-					A motivação para criar o site sobre energia renovável surgiu da
-					preocupação com as mudanças climáticas e a dependência de fontes não
-					sustentáveis de energia. O objetivo era educar e conscientizar as
-					pessoas sobre o tema, além de criar uma comunidade engajada em buscar
-					soluções sustentáveis. A crença em um futuro movido por energias
-					limpas impulsionou o projeto, que agora é uma realidade, contribuindo
-					para um mundo mais limpo e seguro.
-				</p>
-			</section>
-		</section>
-		<section class="becomeAMemberWrapper">
-			<section id="becomeAMember">
-				<div class="becomeAMemberBox">
-					<h1>Seja um Membro</h1>
+			<section class="whoWeAreWrapper">
+				<div id="whoWeAre">
+					<h1>Quem nós somos?</h1>
+					<img
+						src="/img/aboutme.jpg"
+						width="200"
+						height="200"
+						class="aboutMePeople"
+						alt="Foto de um homem"
+					/>
+					<h2>Lucas Migacz</h2>
 					<p>
-						Faça parte da revolução da energia renovável! Junte-se a nós para um
-						futuro sustentável, apoiando projetos inovadores de energia limpa e
-						combatendo as mudanças climáticas.
+						A motivação para criar o site sobre energia renovável surgiu da
+						preocupação com as mudanças climáticas e a dependência de fontes não
+						sustentáveis de energia. O objetivo era educar e conscientizar as
+						pessoas sobre o tema, além de criar uma comunidade engajada em
+						buscar soluções sustentáveis. A crença em um futuro movido por
+						energias limpas impulsionou o projeto, que agora é uma realidade,
+						contribuindo para um mundo mais limpo e seguro.
 					</p>
-
-					<button class="buttonBecomeAMember">
-						<a href="/register.html">Seja um Membro</a>
-					</button>
 				</div>
 			</section>
-		</section>
-		<section class="contactUsWrapper">
-			<section id="contactUs">
-				<h1>Nos Contate</h1>
-				<p>
-					Junte-se a nós na causa da energia renovável e faça parte da
-					transformação para um futuro mais sustentável.
-				</p>
-				<form
-					class="defaultForm"
-					id="registerForm"
-					action="https://api.staticforms.xyz/submit"
-					method="post"
-				>
-					<label>Nome</label>
-					<input type="text" class="name" name="name" required />
-					<label>E-Mail</label>
-					<input type="email" class="email" name="email" required />
-					<label>Mensagem</label>
+			<section class="becomeAMemberWrapper">
+				<div id="becomeAMember">
+					<div class="becomeAMemberBox">
+						<h1>Seja um Membro</h1>
+						<p>
+							Faça parte da revolução da energia renovável! Junte-se a nós para
+							um futuro sustentável, apoiando projetos inovadores de energia
+							limpa e combatendo as mudanças climáticas.
+						</p>
 
-					<textarea cols="38" rows="6" name="message" required></textarea>
-					<input
-						type="hidden"
-						name="accessKey"
-						value="70cde25c-0250-4e63-a72a-46fadfec32fb"
-					/>
-					<input
-						type="hidden"
-						name="redirectTo"
-						value="https://projeto-agrinho-2023.vercel.app/thankyou.html"
-					/>
-					<input type="submit" value="Enviar Mensagem" id="submitContact" />
-				</form>
+						<button class="buttonReset">
+							<a href="/register.html" class="genericButton">Seja um Membro</a>
+						</button>
+					</div>
+				</div>
 			</section>
-		</section>
+			<section class="contactUsWrapper">
+				<div id="contactUs">
+					<h1>Nos Contate</h1>
+					<p>
+						Junte-se a nós na causa da energia renovável e faça parte da
+						transformação para um futuro mais sustentável.
+					</p>
+					<form
+						class="defaultForm"
+						id="registerForm"
+						action="https://api.staticforms.xyz/submit"
+						method="post"
+					>
+						<label for="nameInput">Nome</label>
+						<input
+							type="text"
+							class="name"
+							name="name"
+							required
+							id="nameInput"
+						/>
+						<label for="emailInput">E-Mail</label>
+						<input
+							type="email"
+							class="email"
+							name="email"
+							id="emailInput"
+							required
+						/>
+						<label for="messageInput">Mensagem</label>
 
-		<section class="footerWrapper">
-			<footer class="footer">
+						<textarea
+							cols="38"
+							rows="6"
+							name="message"
+							id="messageInput"
+							required
+						></textarea>
+						<input
+							type="hidden"
+							name="accessKey"
+							value="70cde25c-0250-4e63-a72a-46fadfec32fb"
+						/>
+						<input
+							type="hidden"
+							name="redirectTo"
+							value="https://projeto-agrinho-2023.vercel.app/thankyou.html"
+						/>
+						<input type="submit" value="Enviar Mensagem" id="submitContact" />
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footerWrapper">
+			<div class="footer">
 				<img src="/img/favicon.png" class="LogoFooter" alt="Logo RenewEarth" />
 				<ul>
 					<li><a href="#theRenewableFutureSection">Home</a></li>
@@ -307,7 +335,7 @@
 						<img src="/img/instagram.svg" width="50" alt="Ícone Instagram" />
 					</a>
 				</div>
-			</footer>
-		</section>
+			</div>
+		</footer>
 	</body>
 </html>
